@@ -23,7 +23,8 @@ I represent business data with visuals to present results.
 
 *A glimpse of projects I've been working on*
 
-** Dscriptive A
+** Diagnostic & Dscriptive Analysis using an Hospital Dataset**
+! [image] (1 hospital Dashboard.png)
 
 
 
