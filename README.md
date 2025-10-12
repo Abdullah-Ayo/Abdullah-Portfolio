@@ -24,7 +24,7 @@ I represent business data with visuals to present results.
 *A glimpse of projects I've been working on*
 
 ** Diagnostic & Dscriptive Analysis of patients using an Hospital Dataset**
-! [image] (Hospital Dashboard.png)
+! [image] (Hospital Dashboard.PNG)
 
 ** Diagnostic & Dscriptive Analysis of employee using an oil Rig Dataset**
 ! [image] (Oil Rig Dashboard.png)
