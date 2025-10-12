@@ -23,19 +23,19 @@ I represent business data with visuals to present results.
 
 *A glimpse of projects I've been working on*
 
-** Diagnostic & Dscriptive Analysis of patients using an Hospital Dataset**
+** Diagnostic & Dscriptive Analysis of patients using an Hospital Dataset.**
 ! [image] (Hospital Dashboard.PNG)
 
-** Diagnostic & Dscriptive Analysis of employee using an oil Rig Dataset**
+** Diagnostic & Dscriptive Analysis of employee using an oil Rig Dataset.**
 ! [image] (Oil Rig Dashboard.png)
 
-** Diagnostic & Dscriptive Sales Analysis using an Electronics Store Dataset**
+** Diagnostic & Dscriptive Sales Analysis using an Electronics Store Dataset.**
 ! [image] (ElectroMart Dashboard.png)
 
-** Diagnostic & Dscriptive HR Analysis using a business HR Dataset**
+** Diagnostic & Dscriptive HR Analysis using a business HR Dataset.**
 ! [image] (Attrition Dashboard.png)
 
-** Diagnostic & Dscriptive Churn Analysis using a bank Dataset**
+** Diagnostic & Dscriptive Churn Analysis using a bank Dataset.**
 ! [image] (Churn Dashboard.png)
 
 
