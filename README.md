@@ -33,7 +33,7 @@ I represent business data with visuals to present results.
 ! [image] (ElectroMart Dashboard.png)
 
 ** Diagnostic & Dscriptive HR Analysis using a business HR Dataset.**
-! [image] (Attrition Dashboard.png)
+! [image] (Screenshot 2025-10-07 23341.png)
 
 ** Diagnostic & Dscriptive Churn Analysis using a bank Dataset.**
 ! [image] (Churn Dashboard.png)
