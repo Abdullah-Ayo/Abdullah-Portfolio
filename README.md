@@ -34,7 +34,7 @@ I prepare and structure raw datasets for analysis, ensuring accuracy and consist
 ![image](Kickstart%201.png)
 ![image](Kickstart%202.png)
 ![image](Kickstart%203.png)
-![image](Kickstart%204.png)
+![image](kickstart%204.png)
 
 
 **Diagnostic & Dscriptive Analysis of patients using an Hospital Dataset.**
