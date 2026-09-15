@@ -25,6 +25,19 @@ I prepare and structure raw datasets for analysis, ensuring accuracy and consist
 *A glimpse of projects I've been working on*
 
 **Diagnostic & Dscriptive Analysis of salesperson performance using power bi.**
+Chioma is carrying the team. Her ₦36.77M surplus accounts for nearly 79% of the total ₦46.6M variance. Without her, the other three combined only add ₦9.83M against target, and Danladi is the only one who missed target outright, though only marginally.
+Monthly Trend (Jan-Dec)
+The year was volatile, not a steady climb:
+●	Weak start: January (-24.70%) and February (-31.49%) were sharp misses, roughly ₦55.5M and ₦61.7M below target respectively.
+●	Sharp rebound: March jumped to +37.44% (+₦87.37M), the biggest single-month swing.
+●	Mixed middle: April dipped again (-11.70%), then May through July hovered close to target (between -1.18% and +11.29%).
+●	Late dip: September (-6.01%) and November (-2.74%) underperformed.
+●	Strong finish: October (+6.75%) and especially December (+41.45%, +₦82.41M) closed the year well.
+So the full-year 1.72% surplus is really the net of two very bad months (Jan, Feb), two very good months (Mar, Dec), and a mostly flat middle, rather than consistent overperformance.
+Dashboard Issues to Flag
+●	The Home page header says "for the year 2014," but every chart axis is labeled 2024. This is very likely a typo on the dashboard (2024, not 2014), worth fixing before this goes to anyone external.
+●	August shows a variance of -₦1,210,000 (actual below target) but the Var% is displayed as +0.81%. Based on the actual figures (₦217,660,000 actual vs ₦218,870,000 target), that percentage should be negative (approximately -0.55%). Worth checking the DAX measure behind that Var% column, since it looks like a sign error rather than a one-off.
+
 ![image](Salesperson%201.png)
 ![image](Salesperson%202.png)
 ![image](Salesperson%203.png)
