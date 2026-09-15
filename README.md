@@ -43,6 +43,26 @@ Dashboard Issues to Flag
 ![image](Salesperson%203.png)
 ![image](Salesperson%204.png)
 
+
+**Data cleaning with MYSQL.**
+1. Removed Duplicates
+●	Used ROW_NUMBER() OVER (PARTITION BY ...) across all columns to flag duplicate rows.
+●	Created a new table layoffs_staging2 (identical structure plus a row_num column) and inserted the numbered rows into it.
+●	Deleted rows where row_num > 1, keeping only the first occurrence of each duplicate set.
+2. Standardized the Data
+●	Trimmed whitespace from the company column.
+●	Consolidated inconsistent industry values (e.g. "Crypto", "Crypto Currency", etc.) into a single 'Crypto' label using LIKE 'crypto%'.
+●	Cleaned country values by trimming a trailing period (fixing 'United States.' to 'United States').
+●	Converted the date column from text to a proper DATE type using STR_TO_DATE with format %m/%d/%Y, then altered the column type from text to date.
+3. Handled Null/Blank Values
+●	Identified rows where both total_laid_off and percentage_laid_off were null (essentially no useful data).
+●	Found blank/null industry values and used a self-join (matching on company and location) to backfill missing industry values from other rows of the same company.
+●	Converted lingering empty-string industry values to proper NULL.
+●	Deleted rows where both total_laid_off and percentage_laid_off were null, since those rows carried no usable metric.
+4. Removed Helper Columns
+●	Dropped the row_num column at the end, since it was only needed for de-duplication.
+![image](datasql%201.png)
+
 **Loan Predictive model using microfinance bank dataset.**
 ![image](Kickstart%201.png)
 ![image](Kickstart%202.png)
