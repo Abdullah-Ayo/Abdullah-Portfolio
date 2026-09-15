@@ -25,10 +25,10 @@ I prepare and structure raw datasets for analysis, ensuring accuracy and consist
 *A glimpse of projects I've been working on*
 
 **Diagnostic & Dscriptive Analysis of salesperson performance using power bi.**
-![image](salesperson%201.png)
-![image](salesperson%202.png)
-![image](salesperson%203.png)
-![image](salesperson%204.png)
+![image](Salesperson%201.png)
+![image](Salesperson%202.png)
+![image](sSalesperson%203.png)
+![image](Salesperson%204.png)
 
 **Diagnostic & Dscriptive Analysis of patients using an Hospital Dataset.**
 ![image](Hospital%20Dashboard.jpeg)
