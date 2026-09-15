@@ -86,7 +86,7 @@ Power BI dashboard design (multi-page report with dynamic KPIs), DAX-based aggre
 ![image](kickstart%204.png)
 
 
-** Hospital Operations Dashboard (Power BI) **
+**Hospital Operations Dashboard (Power BI)**
 
 Built an interactive Power BI dashboard for Well-Life Hospital tracking patient admissions from 2021 to 2024, covering diagnosis trends, demographics, and admission volume, with patient-level search functionality.
 Key Findings
