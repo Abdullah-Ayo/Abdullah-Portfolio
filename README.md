@@ -355,6 +355,43 @@ Power BI dashboard design for a retail use case (multi-dimensional revenue and v
 ![image](deltamart%20dashboard%203.png)
 ![image](Dashboard%204.png)
 
+**Parameter Slicer Dashboard (Power BI)**
+
+
+Built a Power BI dashboard demonstrating parameter-driven visual design, comparing a traditional multi-chart layout against a dynamic, parameter-controlled layout using the same underlying product and location data (Revenue, Rating, Average Age, and Units Sold across brands like Apple, Samsung, Xiaomi, Tecno, and others).
+
+
+Design Approach
+
+●	Left panel: a traditional static layout with four separate bar charts (Revenue, Avg Age, Rating, Units Sold by Product), each competing for space and attention.
+
+●	Right panel: a parameter-driven layout where a single toggle group (Revenue / Rating / Avg Age / Units Sold) dynamically swaps what one bar chart and one set of KPI circles display, and a second toggle group (Location / Products / Rep) switches the dimension being analyzed.
+
+●	Used a single 'what-if' parameter to drive both the KPI cards and the bar chart, rather than duplicating visuals for every metric combination.
+
+
+Why This Matters
+
+●	One visual, many stories: the same chart space answers multiple business questions depending on what the user selects, rather than requiring four charts stacked on a page.
+
+●	Lower cognitive load: a parameter slicer does the filtering for the viewer, so they aren't forced to mentally scan multiple competing charts to find the one relevant to their question.
+
+●	Better scalability: adding a new metric means adding one parameter option and one measure, not redesigning the whole layout.
+
+●	More honest comparison: because every metric renders through the same visual template (same chart shape, same KPI style), the eye doesn't have to re-orient to a new chart type each time, making values easier to compare across categories.
+
+
+Design Principle Demonstrated
+
+A dashboard's job isn't to show everything the analyst found, it's to answer the two or three questions the viewer actually has. Every additional chart competes for limited attention, adds another axis and legend to parse, and increases the risk the viewer misses the number that matters most. This project shows how a parameter slicer resolves the tension between having multiple metrics to show and wanting a focused, minimal-visual layout, by making the chart itself the variable rather than making the page longer.
+
+
+Skills Demonstrated
+
+Power BI parameter and what-if analysis design, dynamic measure switching, dashboard information-architecture (comparing static vs. dynamic layouts side by side), and applying minimal-visual design principles to reduce cognitive load for end users.
+![image](Performance%20slicer.png)
+
+
 
 
 
