@@ -202,16 +202,154 @@ Power BI dashboard design for an industrial/operations use case (KPI vs target t
 
 ![image](Oil%20Rig%20Dashboard.png)
 
-**Diagnostic & Dscriptive Sales Analysis using an Electronics Store Dataset.**
+**Electro Mart Retail Sales Dashboard (Power BI)**
+
+
+Built an interactive Power BI dashboard for Electro Mart Retail LTD analyzing $63.60M in total revenue across 5 product categories, with breakdowns by shipping method, payment method, customer demographics, order status, and loyalty status.
+
+
+Key Findings
+
+
+●	Revenue is heavily concentrated in Standard shipping ($21M), more than any other shipping method and roughly 1.75x the next-highest tier (Expedited/Same Day at $12M each), suggesting most customers aren't paying for faster delivery.
+
+●	Revenue by gender was nearly even (Female $32.19M vs. Male $31.41M), showing no strong gender skew in purchasing.
+
+●	PayPal and Credit Card were the leading payment methods ($19M each), while Cash trailed significantly ($6M), pointing to a strong digital-payment preference among customers.
+
+●	Smartphones led product revenue ($21.52M), roughly 1.5x the next category (Smartwatch, $14.04M), with Headphones contributing the least ($4.04M).
+
+●	The 36-45 age group generated the most revenue ($10.5M), with fairly even spread across the 26-65 range and a sharp drop-off in the 76-85 bracket ($4.9M), the smallest segment.
+
+●	Order cancellation rate is a significant concern: 32.98% of revenue ($20.97M) came from cancelled orders, versus 67.02% completed ($42.63M). Nearly a third of tracked revenue never converted to a completed sale, which is a substantial figure worth investigating (product issues, fulfillment delays, payment failures, etc.) rather than treating as background noise.
+
+●	Loyalty members drove the large majority of revenue (78.58%, $49.98M) versus non-members (21.42%, $13.63M), suggesting the loyalty program is a strong revenue driver worth protecting and expanding.
+
+●	Average product rating sits at 3.1, with "Average" rated reviews contributing the most revenue ($24.23M), while "Poor" ratings still account for a notable $16.17M, indicating room for product/service quality improvement.
+
+
+Dashboard Features
+
+●	Filters for payment method, shipping type, and product type.
+
+●	Consistent revenue-based framing across every visual (all breakdowns measured by revenue rather than order count), keeping the story financially anchored.
+
+●	Demographic, behavioral, and satisfaction metrics combined on a single page for a full customer view.
+
+
+Skills Demonstrated
+
+Power BI dashboard design for a retail/e-commerce use case (multi-dimensional revenue segmentation), surfacing a material business risk (high cancellation rate) rather than only reporting positive metrics, and translating transactional data into a business-level performance summary.
+
 ![image](ElectroMart%20Dashboard.png)
 
-**Diagnostic & Dscriptive HR Analysis using a business HR Dataset.**
+**HR Attrition Dashboard (Excel)**
+
+
+Built an interactive Excel dashboard analyzing employee attrition across a workforce of 780 total staff, covering demographics, performance ratings, satisfaction, salary, and job-role breakdowns, with filtering by gender and job role.
+
+
+Key Findings
+
+●	Attrition rate stands at 30% (234 of 780 total staff), with 546 staff currently active, a high rate worth flagging as a core business concern rather than a routine metric.
+
+●	Attrition is concentrated in early-to-mid career staff: the 31-35 age range accounts for the highest attrition (91 employees), nearly double the 41-45 range (20), with the 46-50 range barely represented (1), suggesting retention issues are heaviest among younger and mid-career employees rather than those nearing typical retirement age.
+
+●	Gender split in attrition was fairly close but skewed toward male staff (Male 123 vs. Female 111).
+
+●	Performance ratings among attrited staff skewed negative: "Poor" (76) and "Average" (70) ratings were the most common, together far outweighing "Above Average" (20) and "Good" (11), indicating attrition is disproportionately concentrated among lower-performing or so-labeled staff, though this pattern deserves a closer look at whether rating and attrition are cause, effect, or both.
+
+●	Satisfaction ratings tell a similar story: "Average" (116) and "Unsatisfied" (68) dominate, while "Highly Satisfied" (4) and "Highly Unsatisfied" (3) are rare, with an average satisfaction rating of only 3.8.
+
+●	Salary appears to be a factor: only 24 attrited employees were in the "Very Low" salary bracket, while 87 were "Low" and 86 were "High", suggesting attrition isn't purely a low-pay problem, and other factors (role, performance, tenure) likely play a larger role than compensation alone.
+
+●	HR (49) and Finance (46) departments had the highest attrition counts, with IT (36) and Engineering (18, per job role) trailing. By job role, Specialist (56) and Engineer (51) roles saw the most attrition.
+
+●	Average tenure (years of service) for attrited staff is 6.2 years, with a cyclical pattern in the attrition-by-tenure trend line rather than a simple early-exit or late-exit skew.
+
+
+Dashboard Features
+
+●	Filters for gender and job role (multi-select button filter).
+
+●	KPI cards for total staff, total attrition, active staff, and attrition rate.
+
+●	Radial/gauge visuals for salary-based attrition segmentation (Low, High, Very High, Very Low), alongside bar and donut charts for categorical breakdowns.
+
+
+Skills Demonstrated
+
+Excel dashboard design for an HR/people-analytics use case (attrition segmentation across multiple dimensions), interpreting workforce data cautiously (noting correlation vs. causation questions around performance and attrition rather than overstating the finding), and translating HR metrics into a leadership-ready summary.
+
+
 ![image](Screenshot%202025-10-07%2023341.png)
 
-**Diagnostic & Dscriptive Churn Analysis using a bank Dataset.**
+**Bank Churn Analysis Dashboard (Excel)**
+
+
+Built an interactive Excel dashboard for XYZ Bank analyzing customer churn across 10,000 customers, with breakdowns by geography, age, gender, tenure, account balance, and credit score, filterable by geography and credit score range.
+
+
+Key Findings
+
+●	Overall churn rate is 20.37% (2,037 of 10,000 customers), roughly 1 in 5 customers churning.
+
+●	Churn is heavily age-concentrated: the 46-55 age range has the highest churn rate (50.57%), closely followed by 56-65 (48.32%), while younger customers (16-25, 26-35) churn far less (7.53% and 8.50%). This is a sharp pattern, older-middle-age customers are more than 6x as likely to churn as customers under 35.
+
+●	Geographically, Ebonyi has by far the highest churn rate (32.44%), roughly double Enugu (16.67%) and Anambra (16.15%), making it the clear geographic outlier worth investigating.
+
+●	Gender split in churn was fairly close but skewed toward one group (25.07% vs. an implied ~16.46% for the other, based on the donut chart), though the exact labels weren't fully legible in the source image, worth double-checking against the source file before publishing.
+
+●	Tenure showed relatively little variation in churn rate (between 18.87% and 21.30% across all tenure bands), suggesting how long a customer has been with the bank isn't a strong standalone churn driver.
+
+●	Account balance shows a clear signal: customers with balances in the ₦200k-₦249k range have a churn rate of 55.56%, far higher than any other balance band (next highest is ₦100k-₦149k at 25.85%), a striking pattern that likely deserves more investigation, since a churn rate this much higher than every neighboring band could reflect a genuine risk segment or a smaller sample size skewing the percentage.
+
+●	Credit score range showed minimal variation in churn rate (19.54% to 21.37% across all bands), indicating credit score alone isn't a strong churn predictor here.
+
+
+Dashboard Features
+
+●	Filters for geography and credit score range.
+
+●	Geographic map visual (Nigeria states) showing churn rate by region.
+
+●	Combination of trend line, bar, donut, and horizontal bar charts across a single-page layout.
+
+
+Skills Demonstrated
+
+Excel dashboard design for a banking/customer-retention use case (churn segmentation across demographic, geographic, and financial dimensions), identifying a high-impact outlier segment (the ₦200k-₦249k balance band) rather than only reporting averages, and translating churn data into a business-level risk summary.
+
 ![image](Churn%20Dashboard.png)
 
-**Diagnostic &Descriptive Sales analysis for a sport hardware store.**
+**Delmart Retail Ltd Sales Dashboard (Power BI)**
+
+Built a multi-page Power BI dashboard for Delmart Retail Ltd (a bike/cycling retailer) analyzing 113,223 sales and ₦95,223,593 in total revenue across 17 products in 3 categories, with filters by product category, product, and year.
+
+
+Key Findings
+
+●	Revenue is heavily skewed toward customers aged 26-35 (₦35.09M), followed by 36-45 (₦27.84M), together accounting for roughly two-thirds of total revenue, while customers over 65 contribute a negligible share (under ₦250K combined for the 66-95 age range).
+
+●	Bikes drive revenue disproportionately to sales volume: Bikes account for only 14.9% of unit sales (16,924) but 72.69% of revenue (₦69.22M), while Clothing accounts for the majority of unit sales (62.1%, 70,317) but a much smaller share of revenue, a classic high-volume/low-margin vs. low-volume/high-margin split.
+
+●	At the sub-category level, this pattern repeats: Road Bikes generate the most revenue (₦37.42M) despite modest unit sales (13,406), while Tires and Tubes sell the most units by far (33,866) but generate comparatively little revenue (₦5.17M), confirming bikes as the margin driver and consumables as the volume driver.
+
+●	Rivers state leads in both sales volume (39,303) and revenue (₦31M), but Delta stands out on efficiency, generating ₦25M in revenue from fewer sales than Rivers, suggesting a higher average order value in that state worth investigating further.
+
+●	Revenue split by gender was close to even (Female 50.78% vs. Male 49.22%).
+
+
+Two Things Worth Flagging in the Dashboard
+
+1. One "Total Sales by Customer_Gender" visual shows values (701,285 and 647,068) that sum to 1,348,353, matching Total Order Quantity rather than Total Sales (113,223). This looks like a mislabeled measure (order quantity plotted under a "Total Sales" title) rather than an actual sales-by-gender breakdown, worth correcting before sharing externally.
+2. The Year slicer only offers 2011, 2012, and 2013 as selectable options, but the "Total Sales by Year, Quarter and Month" trend line extends through 2016 with a sharp sawtooth pattern (a steep rise, a sudden drop to near-zero in 2015, then another rise). This mismatch between the filter's stated range and the chart's actual range, combined with the unusual cyclical shape, suggests either a data scope issue or an anomaly worth investigating before treating the trend as a genuine seasonal pattern.
+
+
+Skills Demonstrated
+
+Power BI dashboard design for a retail use case (multi-dimensional revenue and volume segmentation), distinguishing volume drivers from margin drivers rather than treating all products equally, and catching dashboard-level labeling and scope inconsistencies through careful cross-checking of visuals against their underlying totals.
+
 ![image](deltamart%20dashboard%201.png)
 ![image](deltamart%20dashboard%202.png)
 ![image](deltamart%20dashboard%203.png)
