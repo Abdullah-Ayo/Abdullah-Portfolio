@@ -24,19 +24,19 @@ I prepare and structure raw datasets for analysis, ensuring accuracy and consist
 
 *A glimpse of projects I've been working on*
 
-** Diagnostic & Dscriptive Analysis of patients using an Hospital Dataset.**
+**Diagnostic & Dscriptive Analysis of patients using an Hospital Dataset.**
 ![image](Hospital%20Dashboard.jpeg)
 
-** Diagnostic & Dscriptive Analysis of employee using an oil Rig Dataset.**
+**Diagnostic & Dscriptive Analysis of employee using an oil Rig Dataset.**
 ![image](Oil%20Rig%20Dashboard.png)
 
-** Diagnostic & Dscriptive Sales Analysis using an Electronics Store Dataset.**
+**Diagnostic & Dscriptive Sales Analysis using an Electronics Store Dataset.**
 ![image](ElectroMart%20Dashboard.png)
 
-** Diagnostic & Dscriptive HR Analysis using a business HR Dataset.**
+**Diagnostic & Dscriptive HR Analysis using a business HR Dataset.**
 ![image](Screenshot%202025-10-07%2023341.png)
 
-** Diagnostic & Dscriptive Churn Analysis using a bank Dataset.**
+**Diagnostic & Dscriptive Churn Analysis using a bank Dataset.**
 ![image](Churn%20Dashboard.png)
 
 
