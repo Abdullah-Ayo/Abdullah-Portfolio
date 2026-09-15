@@ -25,6 +25,7 @@ I prepare and structure raw datasets for analysis, ensuring accuracy and consist
 *A glimpse of projects I've been working on*
 
 **Diagnostic & Dscriptive Analysis of salesperson performance using power bi.**
+
 Chioma is carrying the team. Her ₦36.77M surplus accounts for nearly 79% of the total ₦46.6M variance. Without her, the other three combined only add ₦9.83M against target, and Danladi is the only one who missed target outright, though only marginally.
 Monthly Trend (Jan-Dec)
 The year was volatile, not a steady climb:
@@ -63,7 +64,26 @@ Dashboard Issues to Flag
 ●	Dropped the row_num column at the end, since it was only needed for de-duplication.
 ![image](datasql%201.png)
 
-**Loan Predictive model using microfinance bank dataset.**
+**Kickstarter Campaign Success Analysis (Power BI)**
+
+Built an interactive Power BI dashboard analyzing 331K completed Kickstarter campaigns to identify what drives project success and failure, combining descriptive analytics with two predictive regression models.
+Key Findings
+●	Overall success rate across the dataset was 40.38% (134K successful vs. 198K failed projects).
+●	Dance had the highest success rate among categories (65.44%), followed by Theater (63.8%), despite neither being high-volume categories, indicating a quality-over-quantity pattern.
+●	Among projects with funding goals above $1,000, the success rate dropped to 37.69%, below the overall average, suggesting more ambitious funding targets are harder to hit.
+●	Country-level analysis found only one year (2011) where successful projects outnumbered failed ones globally, and identified Japan as the only country where pledged amounts to failed projects exceeded pledges to successful ones ($47,705 vs $37,106), a signal of low investor engagement rather than a large gap.
+Predictive Modeling
+●	Built two regression models (a "success likelihood" model and a "failure likelihood" model) using funding goal, pledge amount, and backer count as predictors.
+●	Both models showed consistent directional relationships: higher goals increased failure risk, while higher pledge totals and backer counts increased success likelihood.
+Important limitation: both models had very low explanatory power (R² of 0.017 and 0.0115 respectively), meaning goal, pledge, and backer count together explain less than 2% of what determines success or failure. The directional relationships are real, but success is driven mostly by factors outside this dataset (category, marketing, timing, etc.). This limitation is stated explicitly rather than glossed over, since a reviewer with a statistics background would check for it.
+Recommendations Delivered
+●	Ensure funding goals are realistic and achievable before launch.
+●	Target growth campaigns in low-engagement regions like Japan.
+●	Prioritize partnerships in high-pledge countries (US, UK).
+●	Expand the underlying dataset to capture more explanatory variables, since the current model's low R² points to missing predictors.
+Skills Demonstrated
+Power BI dashboard design (multi-page report with dynamic KPIs), DAX-based aggregation, regression modeling and interpretation, statistical literacy (correctly reporting and contextualizing a low R² rather than overstating model performance), and translating analysis into stakeholder-facing recommendations.
+
 ![image](Kickstart%201.png)
 ![image](Kickstart%202.png)
 ![image](Kickstart%203.png)
