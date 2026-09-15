@@ -163,7 +163,43 @@ Power BI dashboard design for a healthcare/operations use case (KPI cards, time-
 
 ![image](Hospital%20Dashboard.jpeg)
 
-**Diagnostic & Dscriptive Analysis of employee using an oil Rig Dataset.**
+**Oil & Gas Production Performance Dashboard (Power BI)**
+
+Built an interactive Power BI dashboard for AXZ Oil and Gas Production Company tracking weekly operational KPIs across 4 rig locations (Brass, Ekeremor, Nembe, S.Ijaw), covering production efficiency, cost, safety/issue rates, and workforce metrics.
+
+
+Key Findings vs. Target
+
+
+●	Units Produced/Hr hit target almost exactly (11.02 vs. 11 target, +0.19%).
+
+●	Production Cost/Hr came in significantly over target (₦898 vs. ₦750 target, -19.75%), the largest gap on the dashboard and a clear cost-control concern.
+
+●	Units Produced/Issue missed target (232 vs. 250, -7.03%), suggesting output per operational issue/incident is below expectations.
+
+●	Average Training Hours exceeded target (1.11 vs. 1 target, +11.06%), the one KPI outperforming its benchmark.
+
+Rig-Level Performance
+●	Brass is the standout performer, leading in units produced per hour (11.2), units produced per issue (314), training hours (1.5), and total units produced (101K), while also carrying the largest workforce (39 employees) and most hours worked (63 avg).
+
+●	Ekeremor is the clear underperformer, with the lowest units/hr (10.8), lowest units per issue (171), lowest training hours (0.8), and the highest cost per unit (₦1,235), a combination worth flagging since it's paying the most per unit while producing the least efficiently.
+
+●	Nembe and S.Ijaw sit in between, with Nembe generally closer to Brass's performance and S.Ijaw closer to Ekeremor's on cost efficiency (₦976/unit) despite reasonable output.
+
+
+Dashboard Features
+
+●	Week-by-week filtering (Week 1-4) alongside a running week/day selector.
+
+●	Rig-location breakdowns across all four core KPIs plus supporting operational metrics (total units, total cost, hours worked, headcount).
+
+●	Consistent visual language (bar charts for comparison, donut chart for workforce distribution) supporting quick cross-rig comparison.
+
+
+Skills Demonstrated
+
+Power BI dashboard design for an industrial/operations use case (KPI vs target tracking, multi-location comparison), identifying underperforming units by cross-referencing multiple metrics rather than a single KPI, and translating operational data into a management-level performance summary.
+
 ![image](Oil%20Rig%20Dashboard.png)
 
 **Diagnostic & Dscriptive Sales Analysis using an Electronics Store Dataset.**
