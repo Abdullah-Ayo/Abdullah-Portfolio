@@ -39,6 +39,12 @@ I prepare and structure raw datasets for analysis, ensuring accuracy and consist
 **Diagnostic & Dscriptive Churn Analysis using a bank Dataset.**
 ![image](Churn%20Dashboard.png)
 
+**Diagnostic &Descriptive Sales analysis for a sport hardware store.**
+![image](deltamart%20dashboard%201)
+![image](deltamart%20dashboard%202)
+![image](deltamart%20dashboard%203)
+![image](dashboard%204)
+
 
 
 
