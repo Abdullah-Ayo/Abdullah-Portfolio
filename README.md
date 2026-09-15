@@ -86,7 +86,23 @@ Power BI dashboard design (multi-page report with dynamic KPIs), DAX-based aggre
 ![image](kickstart%204.png)
 
 
-**Diagnostic & Dscriptive Analysis of patients using an Hospital Dataset.**
+** Hospital Operations Dashboard (Power BI) **
+
+Built an interactive Power BI dashboard for Well-Life Hospital tracking patient admissions from 2021 to 2024, covering diagnosis trends, demographics, and admission volume, with patient-level search functionality.
+Key Findings
+●	Total patient volume grew significantly over the period: admissions rose from 1,409 in 2021 to 3,266 in 2024, more than doubling over four years, with 2022 to 2023 showing the steadiest growth phase.
+●	Admissions peaked around January 2024 before declining slightly through mid-2024, a trend worth flagging to stakeholders since it breaks the otherwise consistent upward trajectory.
+●	Diagnosis volume was fairly evenly distributed across the 7 tracked conditions (Typhoid, Asthma, Ulcer, Malaria, Diabetes, Hypertension, Stroke), each falling within a narrow band of roughly 1,390 to 1,487 cases, indicating no single condition dominates the hospital's caseload.
+●	The 26-35 age group had the highest admission volume (2,493 patients), with volume dropping sharply after age 55, and minimally represented in the 76-85 range (218 patients), suggesting the hospital serves primarily a working age population.
+●	Gender split was 56.81% male (5,681) vs 43.19% female (4,319).
+●	Average patient age was 44.0, with a total of 1,451 recorded admission days across the dataset.
+Dashboard Features
+●	Sidebar navigation for filtering by diagnosis type.
+●	Patient registration workflow and patient ID search built into the interface.
+●	Year-based filtering (2021-2024) alongside trend, categorical, and demographic breakdowns on a single page.
+Skills Demonstrated
+Power BI dashboard design for a healthcare/operations use case (KPI cards, time-series trend analysis, categorical and demographic breakdowns), designing for a functional workflow (patient search/registration, not just static reporting), and translating admissions data into an executive-level operational summary.
+
 ![image](Hospital%20Dashboard.jpeg)
 
 **Diagnostic & Dscriptive Analysis of employee using an oil Rig Dataset.**
