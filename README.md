@@ -43,7 +43,7 @@ I prepare and structure raw datasets for analysis, ensuring accuracy and consist
 ![image](deltamart%20dashboard%201.png)
 ![image](deltamart%20dashboard%202.png)
 ![image](deltamart%20dashboard%203.png)
-![image](dashboard%204.png)
+![image](Dashboard%204.png)
 
 
 
