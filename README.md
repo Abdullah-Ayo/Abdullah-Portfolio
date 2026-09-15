@@ -27,14 +27,29 @@ I prepare and structure raw datasets for analysis, ensuring accuracy and consist
 **Sales Variance Analysis Dashboard (Power BI)**
 
 Built a multi-page Power BI dashboard tracking sales performance against targets for a 4-person sales team across the 2024 fiscal year, with drill-downs by salesperson and by month.
+
+
 Key Findings
+
+
 ●	The team exceeded its overall annual target by 1.72% (₦2.619B actual vs ₦2.573B target).
+
 ●	Performance was heavily concentrated: one salesperson (Chioma) generated 79% of the total surplus, while the other three combined only marginally covered the gap, and one rep missed target outright (-0.37%).
+
 ●	Monthly performance was volatile rather than steady: two very weak months (Jan -24.7%, Feb -31.5%) were offset almost entirely by two very strong months (Mar +37.4%, Dec +41.5%), with a mostly flat middle.
+
+
 Data Quality Review
+
+
 ●	Identified and flagged an inconsistency in the dashboard's own Var% calculation for August, where the displayed percentage (+0.81%) didn't match the sign of the underlying variance (a shortfall), pointing to a likely DAX measure error.
+
 ●	Caught a labeling error on the dashboard header ("year 2014" vs. chart axes showing 2024).
+
+
 Skills Demonstrated
+
+
 Power BI report design (KPI cards, drill-through pages, variance visuals), reading and validating DAX-driven metrics, identifying data/calculation errors before reporting to stakeholders, and translating dashboard output into a written executive summary.
 
 
@@ -47,13 +62,21 @@ Power BI report design (KPI cards, drill-through pages, variance visuals), readi
 **SQL Data Cleaning — Layoffs Dataset**
 
 Cleaned and standardized a raw layoffs dataset in MySQL, preparing it for downstream analysis by removing duplicates, standardizing inconsistent values, handling missing data, and dropping helper columns.
+
+
 Process
+
+
 ●	Used ROW_NUMBER() OVER (PARTITION BY...) to detect and remove exact duplicate records, staging the deduplicated data into a clean working table.
 ●	Standardized inconsistent text values: trimmed whitespace from company names, consolidated variant industry labels (e.g., multiple "Crypto" variants) into one category, and cleaned trailing punctuation from country names.
 ●	Converted a text-based date column into a proper DATE type using STR_TO_DATE.
 ●	Backfilled missing industry values using a self-join on company and location, then converted remaining blanks to proper NULL.
 ●	Removed rows with no usable metrics (both layoff count and percentage null) and dropped the temporary row-numbering column once cleaning was complete.
+
+
 Skills Demonstrated
+
+
 SQL data cleaning (CTEs, window functions, self-joins, type conversion), practical data quality judgment (deciding what counts as a true duplicate vs. missing data), and writing maintainable, reviewable SQL.
 Code Review Note
 Two minor logic issues were caught while reviewing the original script: a PARTITION BY clause referencing a string literal instead of the actual date column, and a redundant condition in a later UPDATE statement. Worth mentioning in an interview, as it demonstrates a habit of double-checking queries for correctness.
@@ -63,44 +86,79 @@ Two minor logic issues were caught while reviewing the original script: a PARTIT
 **Kickstarter Campaign Success Analysis (Power BI)**
 
 Built an interactive Power BI dashboard analyzing 331K completed Kickstarter campaigns to identify what drives project success and failure, combining descriptive analytics with two predictive regression models.
+
+
 Key Findings
+
+
 ●	Overall success rate across the dataset was 40.38% (134K successful vs. 198K failed projects).
+
 ●	Dance had the highest success rate among categories (65.44%), followed by Theater (63.8%), despite neither being high-volume categories, indicating a quality-over-quantity pattern.
+
 ●	Among projects with funding goals above $1,000, the success rate dropped to 37.69%, below the overall average, suggesting more ambitious funding targets are harder to hit.
+
 ●	Country-level analysis found only one year (2011) where successful projects outnumbered failed ones globally, and identified Japan as the only country where pledged amounts to failed projects exceeded pledges to successful ones ($47,705 vs $37,106), a signal of low investor engagement rather than a large gap.
+
+
 Predictive Modeling
+
 ●	Built two regression models (a "success likelihood" model and a "failure likelihood" model) using funding goal, pledge amount, and backer count as predictors.
+
 ●	Both models showed consistent directional relationships: higher goals increased failure risk, while higher pledge totals and backer counts increased success likelihood.
 Important limitation: both models had very low explanatory power (R² of 0.017 and 0.0115 respectively), meaning goal, pledge, and backer count together explain less than 2% of what determines success or failure. The directional relationships are real, but success is driven mostly by factors outside this dataset (category, marketing, timing, etc.). This limitation is stated explicitly rather than glossed over, since a reviewer with a statistics background would check for it.
+
+
 Recommendations Delivered
+
 ●	Ensure funding goals are realistic and achievable before launch.
+
 ●	Target growth campaigns in low-engagement regions like Japan.
+
 ●	Prioritize partnerships in high-pledge countries (US, UK).
+
 ●	Expand the underlying dataset to capture more explanatory variables, since the current model's low R² points to missing predictors.
+
+
 Skills Demonstrated
+
 Power BI dashboard design (multi-page report with dynamic KPIs), DAX-based aggregation, regression modeling and interpretation, statistical literacy (correctly reporting and contextualizing a low R² rather than overstating model performance), and translating analysis into stakeholder-facing recommendations.
 
-![image](Kickstart%201.png)
-![image](Kickstart%202.png)
-![image](Kickstart%203.png)
-![image](kickstart%204.png)
+![image](Kickstart%201.png) ![image](Kickstart%202.png) ![image](Kickstart%203.png) ![image](kickstart%204.png)
 
 
 **Hospital Operations Dashboard (Power BI)**
 
 Built an interactive Power BI dashboard for Well-Life Hospital tracking patient admissions from 2021 to 2024, covering diagnosis trends, demographics, and admission volume, with patient-level search functionality.
+
+
 Key Findings
+
+
+
 ●	Total patient volume grew significantly over the period: admissions rose from 1,409 in 2021 to 3,266 in 2024, more than doubling over four years, with 2022 to 2023 showing the steadiest growth phase.
+
 ●	Admissions peaked around January 2024 before declining slightly through mid-2024, a trend worth flagging to stakeholders since it breaks the otherwise consistent upward trajectory.
+
 ●	Diagnosis volume was fairly evenly distributed across the 7 tracked conditions (Typhoid, Asthma, Ulcer, Malaria, Diabetes, Hypertension, Stroke), each falling within a narrow band of roughly 1,390 to 1,487 cases, indicating no single condition dominates the hospital's caseload.
+
 ●	The 26-35 age group had the highest admission volume (2,493 patients), with volume dropping sharply after age 55, and minimally represented in the 76-85 range (218 patients), suggesting the hospital serves primarily a working age population.
+
 ●	Gender split was 56.81% male (5,681) vs 43.19% female (4,319).
+
 ●	Average patient age was 44.0, with a total of 1,451 recorded admission days across the dataset.
+
+
 Dashboard Features
+
 ●	Sidebar navigation for filtering by diagnosis type.
+
 ●	Patient registration workflow and patient ID search built into the interface.
+
 ●	Year-based filtering (2021-2024) alongside trend, categorical, and demographic breakdowns on a single page.
+
+
 Skills Demonstrated
+
 Power BI dashboard design for a healthcare/operations use case (KPI cards, time-series trend analysis, categorical and demographic breakdowns), designing for a functional workflow (patient search/registration, not just static reporting), and translating admissions data into an executive-level operational summary.
 
 ![image](Hospital%20Dashboard.jpeg)
