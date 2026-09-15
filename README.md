@@ -66,11 +66,14 @@ Cleaned and standardized a raw layoffs dataset in MySQL, preparing it for downst
 
 Process
 
-
 ●	Used ROW_NUMBER() OVER (PARTITION BY...) to detect and remove exact duplicate records, staging the deduplicated data into a clean working table.
+
 ●	Standardized inconsistent text values: trimmed whitespace from company names, consolidated variant industry labels (e.g., multiple "Crypto" variants) into one category, and cleaned trailing punctuation from country names.
+
 ●	Converted a text-based date column into a proper DATE type using STR_TO_DATE.
+
 ●	Backfilled missing industry values using a self-join on company and location, then converted remaining blanks to proper NULL.
+
 ●	Removed rows with no usable metrics (both layoff count and percentage null) and dropped the temporary row-numbering column once cleaning was complete.
 
 
@@ -389,7 +392,7 @@ A dashboard's job isn't to show everything the analyst found, it's to answer the
 Skills Demonstrated
 
 Power BI parameter and what-if analysis design, dynamic measure switching, dashboard information-architecture (comparing static vs. dynamic layouts side by side), and applying minimal-visual design principles to reduce cognitive load for end users.
-![image](Performance%20slicer.png)
+![image](Parameter%20slicer.png)
 
 
 
