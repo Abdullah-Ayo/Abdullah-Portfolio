@@ -1,22 +1,23 @@
 ## ABOUT ME
 
-Hello, I'm Lukman Abdullah, a data analyst with passion for turning raw data into actionable insights for solving business problems. Wish experience across sales, human resource, customer service and finance. I help business solve problems and unlock growth.
+Hello, I'm Lukman Abdullah, an economics graduate with hands-on experience in data analysis, business analysis and data visualisation, building Power BI and Tableau dashboards, writing SQL queries and using Excel to clean, model and interpret data for business decision-making. Skilled at identifying patterns in datasets, translating findings into clear insights, and supporting process and market research analysis.
 
 ## WHAT I DO
 
-*As certified Analyst, I help businesses in cleaning, modelling, analyzing, visualizing and drawing insights from their data to solve issues through actionable and analytics based reccomendationsusing powerbi or excel.*
+**📊 Data Analysis**
+I clean, model, and interpret data using Excel and SQL to uncover patterns and turn raw numbers into insights that support decision-making.
 
-**_ ✅ Data Preparation**
-I clean, transform and organize businesses' data into structured and usable format for analysis.
+**📈 Data Visualization**
+I build interactive dashboards in Power BI and Tableau that turn complex datasets into clear, easy-to-read stories for business stakeholders.
 
-**_ ✅ Data Modelling**
-I create a subset of data/tables to answer business questions.
+**📉 Forecasting & Econometrics**
+I apply statistical and econometric methods to analyze trends and support forecasting for business planning and decision-making.
 
-**_ ✅ Data Analysis**
-I make use of statistical tools(Descriptive and diagnostic statistics) to answer these questions.
+**🔍 Business & Market Analysis**
+I analyze business processes, conduct market research, and investigate process deviations to identify opportunities for organizational improvement.
 
-**_ ✅ Data Visualization**
-I represent business data with visuals to present results.
+**🧹 Data Cleaning & Reporting**
+I prepare and structure raw datasets for analysis, ensuring accuracy and consistency before building reports and dashboards.
 
 
 ## MY PORTFOLIO
@@ -24,19 +25,19 @@ I represent business data with visuals to present results.
 *A glimpse of projects I've been working on*
 
 ** Diagnostic & Dscriptive Analysis of patients using an Hospital Dataset.**
-![image](Hospital Dashboard.jpeg)
+![image](Hospital%20Dashboard.jpeg)
 
 ** Diagnostic & Dscriptive Analysis of employee using an oil Rig Dataset.**
-![image](Oil Rig Dashboard.png)
+![image](Oil%20Rig%20Dashboard.png)
 
 ** Diagnostic & Dscriptive Sales Analysis using an Electronics Store Dataset.**
-![image](ElectroMart Dashboard.png)
+![image](ElectroMart%20Dashboard.png)
 
 ** Diagnostic & Dscriptive HR Analysis using a business HR Dataset.**
-![image](Screenshot 2025-10-07 23341.png)
+![image](Screenshot%202025-10-07%2023341.png)
 
 ** Diagnostic & Dscriptive Churn Analysis using a bank Dataset.**
-![image](Churn Dashboard.png)
+![image](Churn%20Dashboard.png)
 
 
 
