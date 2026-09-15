@@ -30,6 +30,13 @@ I prepare and structure raw datasets for analysis, ensuring accuracy and consist
 ![image](Salesperson%203.png)
 ![image](Salesperson%204.png)
 
+**Loan Predictive model using microfinance bank dataset.**
+![image](Kickstart%201.png)
+![image](Kickstart%202.png)
+![image](Kickstart%203.png)
+![image](Kickstart%204.png)
+
+
 **Diagnostic & Dscriptive Analysis of patients using an Hospital Dataset.**
 ![image](Hospital%20Dashboard.jpeg)
 
