@@ -49,7 +49,7 @@ SQL data cleaning (CTEs, window functions, self-joins, type conversion), practic
 Code Review Note
 Two minor logic issues were caught while reviewing the original script: a PARTITION BY clause referencing a string literal instead of the actual date column, and a redundant condition in a later UPDATE statement. Worth mentioning in an interview, as it demonstrates a habit of double-checking queries for correctness.
 
-![image](datasql%201.png)
+![image](Screenshot%202026-09-18%20165327.png)
 
 **Oil & Gas Production Performance Dashboard (Power BI)**
 
