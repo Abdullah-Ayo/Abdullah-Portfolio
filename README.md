@@ -24,6 +24,72 @@ I prepare and structure raw datasets for analysis, ensuring accuracy and consist
 
 *A glimpse of projects I've been working on*
 
+**SQL Data Cleaning — Layoffs Dataset**
+
+Cleaned and standardized a raw layoffs dataset in MySQL, preparing it for downstream analysis by removing duplicates, standardizing inconsistent values, handling missing data, and dropping helper columns.
+
+
+Process
+
+●	Used ROW_NUMBER() OVER (PARTITION BY...) to detect and remove exact duplicate records, staging the deduplicated data into a clean working table.
+
+●	Standardized inconsistent text values: trimmed whitespace from company names, consolidated variant industry labels (e.g., multiple "Crypto" variants) into one category, and cleaned trailing punctuation from country names.
+
+●	Converted a text-based date column into a proper DATE type using STR_TO_DATE.
+
+●	Backfilled missing industry values using a self-join on company and location, then converted remaining blanks to proper NULL.
+
+●	Removed rows with no usable metrics (both layoff count and percentage null) and dropped the temporary row-numbering column once cleaning was complete.
+
+
+Skills Demonstrated
+
+
+SQL data cleaning (CTEs, window functions, self-joins, type conversion), practical data quality judgment (deciding what counts as a true duplicate vs. missing data), and writing maintainable, reviewable SQL.
+Code Review Note
+Two minor logic issues were caught while reviewing the original script: a PARTITION BY clause referencing a string literal instead of the actual date column, and a redundant condition in a later UPDATE statement. Worth mentioning in an interview, as it demonstrates a habit of double-checking queries for correctness.
+
+![image](datasql%201.png)
+
+**Oil & Gas Production Performance Dashboard (Power BI)**
+
+Built an interactive Power BI dashboard for AXZ Oil and Gas Production Company tracking weekly operational KPIs across 4 rig locations (Brass, Ekeremor, Nembe, S.Ijaw), covering production efficiency, cost, safety/issue rates, and workforce metrics.
+
+
+Key Findings vs. Target
+
+
+●	Units Produced/Hr hit target almost exactly (11.02 vs. 11 target, +0.19%).
+
+●	Production Cost/Hr came in significantly over target (₦898 vs. ₦750 target, -19.75%), the largest gap on the dashboard and a clear cost-control concern.
+
+●	Units Produced/Issue missed target (232 vs. 250, -7.03%), suggesting output per operational issue/incident is below expectations.
+
+●	Average Training Hours exceeded target (1.11 vs. 1 target, +11.06%), the one KPI outperforming its benchmark.
+
+Rig-Level Performance
+●	Brass is the standout performer, leading in units produced per hour (11.2), units produced per issue (314), training hours (1.5), and total units produced (101K), while also carrying the largest workforce (39 employees) and most hours worked (63 avg).
+
+●	Ekeremor is the clear underperformer, with the lowest units/hr (10.8), lowest units per issue (171), lowest training hours (0.8), and the highest cost per unit (₦1,235), a combination worth flagging since it's paying the most per unit while producing the least efficiently.
+
+●	Nembe and S.Ijaw sit in between, with Nembe generally closer to Brass's performance and S.Ijaw closer to Ekeremor's on cost efficiency (₦976/unit) despite reasonable output.
+
+
+Dashboard Features
+
+●	Week-by-week filtering (Week 1-4) alongside a running week/day selector.
+
+●	Rig-location breakdowns across all four core KPIs plus supporting operational metrics (total units, total cost, hours worked, headcount).
+
+●	Consistent visual language (bar charts for comparison, donut chart for workforce distribution) supporting quick cross-rig comparison.
+
+
+Skills Demonstrated
+
+Power BI dashboard design for an industrial/operations use case (KPI vs target tracking, multi-location comparison), identifying underperforming units by cross-referencing multiple metrics rather than a single KPI, and translating operational data into a management-level performance summary.
+
+![image](Oil%20Rig%20Dashboard.png)
+
 **Sales Variance Analysis Dashboard (Power BI)**
 
 Built a multi-page Power BI dashboard tracking sales performance against targets for a 4-person sales team across the 2024 fiscal year, with drill-downs by salesperson and by month.
@@ -57,34 +123,6 @@ Power BI report design (KPI cards, drill-through pages, variance visuals), readi
 ![image](Salesperson%202.png)
 ![image](Salesperson%203.png)
 ![image](Salesperson%204.png)
-
-
-**SQL Data Cleaning — Layoffs Dataset**
-
-Cleaned and standardized a raw layoffs dataset in MySQL, preparing it for downstream analysis by removing duplicates, standardizing inconsistent values, handling missing data, and dropping helper columns.
-
-
-Process
-
-●	Used ROW_NUMBER() OVER (PARTITION BY...) to detect and remove exact duplicate records, staging the deduplicated data into a clean working table.
-
-●	Standardized inconsistent text values: trimmed whitespace from company names, consolidated variant industry labels (e.g., multiple "Crypto" variants) into one category, and cleaned trailing punctuation from country names.
-
-●	Converted a text-based date column into a proper DATE type using STR_TO_DATE.
-
-●	Backfilled missing industry values using a self-join on company and location, then converted remaining blanks to proper NULL.
-
-●	Removed rows with no usable metrics (both layoff count and percentage null) and dropped the temporary row-numbering column once cleaning was complete.
-
-
-Skills Demonstrated
-
-
-SQL data cleaning (CTEs, window functions, self-joins, type conversion), practical data quality judgment (deciding what counts as a true duplicate vs. missing data), and writing maintainable, reviewable SQL.
-Code Review Note
-Two minor logic issues were caught while reviewing the original script: a PARTITION BY clause referencing a string literal instead of the actual date column, and a redundant condition in a later UPDATE statement. Worth mentioning in an interview, as it demonstrates a habit of double-checking queries for correctness.
-
-![image](datasql%201.png)
 
 **Kickstarter Campaign Success Analysis (Power BI)**
 
@@ -166,44 +204,6 @@ Power BI dashboard design for a healthcare/operations use case (KPI cards, time-
 
 ![image](Hospital%20Dashboard.jpeg)
 
-**Oil & Gas Production Performance Dashboard (Power BI)**
-
-Built an interactive Power BI dashboard for AXZ Oil and Gas Production Company tracking weekly operational KPIs across 4 rig locations (Brass, Ekeremor, Nembe, S.Ijaw), covering production efficiency, cost, safety/issue rates, and workforce metrics.
-
-
-Key Findings vs. Target
-
-
-●	Units Produced/Hr hit target almost exactly (11.02 vs. 11 target, +0.19%).
-
-●	Production Cost/Hr came in significantly over target (₦898 vs. ₦750 target, -19.75%), the largest gap on the dashboard and a clear cost-control concern.
-
-●	Units Produced/Issue missed target (232 vs. 250, -7.03%), suggesting output per operational issue/incident is below expectations.
-
-●	Average Training Hours exceeded target (1.11 vs. 1 target, +11.06%), the one KPI outperforming its benchmark.
-
-Rig-Level Performance
-●	Brass is the standout performer, leading in units produced per hour (11.2), units produced per issue (314), training hours (1.5), and total units produced (101K), while also carrying the largest workforce (39 employees) and most hours worked (63 avg).
-
-●	Ekeremor is the clear underperformer, with the lowest units/hr (10.8), lowest units per issue (171), lowest training hours (0.8), and the highest cost per unit (₦1,235), a combination worth flagging since it's paying the most per unit while producing the least efficiently.
-
-●	Nembe and S.Ijaw sit in between, with Nembe generally closer to Brass's performance and S.Ijaw closer to Ekeremor's on cost efficiency (₦976/unit) despite reasonable output.
-
-
-Dashboard Features
-
-●	Week-by-week filtering (Week 1-4) alongside a running week/day selector.
-
-●	Rig-location breakdowns across all four core KPIs plus supporting operational metrics (total units, total cost, hours worked, headcount).
-
-●	Consistent visual language (bar charts for comparison, donut chart for workforce distribution) supporting quick cross-rig comparison.
-
-
-Skills Demonstrated
-
-Power BI dashboard design for an industrial/operations use case (KPI vs target tracking, multi-location comparison), identifying underperforming units by cross-referencing multiple metrics rather than a single KPI, and translating operational data into a management-level performance summary.
-
-![image](Oil%20Rig%20Dashboard.png)
 
 **Electro Mart Retail Sales Dashboard (Power BI)**
 
