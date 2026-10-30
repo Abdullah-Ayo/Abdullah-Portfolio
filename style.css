@@ -411,14 +411,16 @@ a:hover {
   box-shadow: 0 6px 20px rgba(10, 102, 194, 0.6);
 }
 
-.hero-btn.github {
+.hero-btn.github,
+.hero-btn.email {
   background: rgba(255, 255, 255, 0.08);
   color: var(--ink);
   border: 1px solid var(--line);
 }
 
-.hero-btn.github:hover {
-  background: rgba(255, 255, 255, 0.16);
+.hero-btn.github:hover,
+.hero-btn.email:hover {
+  background: rgba(242, 184, 75, 0.16);
   border-color: var(--accent);
   color: var(--accent);
   transform: translateY(-2px);
