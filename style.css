@@ -168,11 +168,35 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 12px;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 6px 14px 6px 6px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  transition: all 0.2s ease;
+}
+
+.hero-profile-pill:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.hero-profile-name {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  letter-spacing: 0.04em;
+}
+
+.hero-profile-pill:hover .hero-profile-name {
+  color: var(--accent);
 }
 
 .hero-avatar {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: 2px solid var(--accent);
   object-fit: cover;
@@ -209,6 +233,58 @@ a:hover {
   max-width: 760px;
   margin: 16px auto 0;
   line-height: 1.55;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero-btn.linkedin {
+  background: #0A66C2;
+  color: #FFFFFF;
+  border: 1px solid #0A66C2;
+  box-shadow: 0 4px 16px rgba(10, 102, 194, 0.4);
+}
+
+.hero-btn.linkedin:hover {
+  background: #004182;
+  color: #FFFFFF;
+  border-color: #004182;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(10, 102, 194, 0.6);
+}
+
+.hero-btn.github {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+.hero-btn.github:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
 }
 
 /* Label Bar */
